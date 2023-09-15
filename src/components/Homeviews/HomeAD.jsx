@@ -1,6 +1,6 @@
 import React from "react";
 
-function AD() {
+function HomeAD() {
   return (
     <div>
       <span>AD</span>
@@ -8,4 +8,4 @@ function AD() {
   );
 }
 
-export default AD;
+export default HomeAD;

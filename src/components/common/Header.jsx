@@ -1,6 +1,6 @@
 import React from "react";
 // import logo from "../../assets/img/logo.svg";
-import logo_x from "../../assets/img/logo_x.svg";
+// import logo_x from "../../assets/img/logo_x.svg";
 import logo from "../../assets/img/logo.svg";
 import profileImg from "../../assets/img/profileImg.png";
 import "../../assets/css/style.scss";
@@ -39,6 +39,7 @@ function Header() {
           </button>
         </li>
       </ul>
+      <div className="campaignMenu"></div>
     </div>
   );
 }

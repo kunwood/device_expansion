@@ -1,6 +1,6 @@
 import React from "react";
 
-function BestPerformer() {
+function HomeBestPerformer() {
   return (
     <div>
       <span>BestPerformer</span>
@@ -8,4 +8,4 @@ function BestPerformer() {
   );
 }
 
-export default BestPerformer;
+export default HomeBestPerformer;

@@ -1,9 +1,17 @@
 import React from "react";
+import "../../assets/css/style.scss";
 
 function Footer() {
   return (
     <div>
-      <span>Footer</span>
+      <div className="footerArea">
+        <h3>Footer</h3>
+        <h3>Footer</h3>
+        <h3>Footer</h3>
+        <h3>Footer</h3>
+        <h3>Footer</h3>
+        <h3>Footer</h3>
+      </div>
     </div>
   );
 }

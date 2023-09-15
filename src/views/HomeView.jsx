@@ -1,23 +1,34 @@
 import React from "react";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
-import EventCarousel from "../components/Homeviews/EventCarousel";
-import CampaignMenu from "../components/Homeviews/CampaignMenu";
-import LocalCampaign from "../components/Homeviews/LocalCampaign";
-import BestCampaign from "../components/Homeviews/BestCampaign";
-import AD from "../components/Homeviews/AD";
-import BestPerformer from "../components/Homeviews/BestPerformer";
+import HomeEventCarousel from "../components/Homeviews/HomeEventCarousel";
+import HomeLocalCampaign from "../components/Homeviews/HomeLocalCampaign";
+import HomeBestCampaign from "../components/Homeviews/HomeBestCampaign";
+import HomeAD from "../components/Homeviews/HomeAD";
+import HomeBestPerformer from "../components/Homeviews/HomeBestPerformer";
+import "../assets/css/style.scss";
 
 const HomeView = () => {
   return (
     <div>
       <Header />
-      <EventCarousel />
-      <CampaignMenu />
-      <LocalCampaign />
-      <BestCampaign />
-      <AD />
-      <BestPerformer />
+      <div className="homeView_container">
+        <div className="item HomeLocalCampaign">
+          <HomeLocalCampaign />
+        </div>
+        <div className="item HomeBestCampaign">
+          <HomeBestCampaign />
+        </div>
+        <div className="item HomeEventCarousel">
+          <HomeEventCarousel />
+        </div>
+        <div className="item HomeBestPerformer">
+          <HomeBestPerformer />
+        </div>
+        <div className="item HomeAD">
+          <HomeAD />
+        </div>
+      </div>
       <Footer />
     </div>
   );

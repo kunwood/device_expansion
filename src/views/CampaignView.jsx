@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "../components/common/Header";
 
 const CampaignView = () => {
   return (
     <div>
-      <span>test</span>
+      <Header />
     </div>
   );
 };

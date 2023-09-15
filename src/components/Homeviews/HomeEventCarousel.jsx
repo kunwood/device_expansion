@@ -1,6 +1,6 @@
 import React from "react";
 
-function EventCarousel() {
+function HomeEventCarousel() {
   return (
     <div>
       <span>EventCarousel</span>
@@ -8,4 +8,4 @@ function EventCarousel() {
   );
 }
 
-export default EventCarousel;
+export default HomeEventCarousel;
