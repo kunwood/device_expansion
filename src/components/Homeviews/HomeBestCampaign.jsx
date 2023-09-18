@@ -3,114 +3,145 @@ import localCampaignImg1 from "../../assets/img/homeLocal/local1.png";
 import localCampaignImg2 from "../../assets/img/homeLocal/local2.png";
 import localCampaignImg3 from "../../assets/img/homeLocal/local3.png";
 import localCampaignImg4 from "../../assets/img/homeLocal/local4.png";
-import "../../assets/css/style.scss";
 
-function HomeBestCampaign() {
+function HomeLocalCampaign() {
   return (
-    <div className="HomeBestCampaignBorder">
-      <div className="HomeBestCampaignList">
-        <div className="HomeBestCampaignTitle">
-          <span className="BestCampaignTitle">내 인기 캠페인</span>
-          <a href="/campaign" className="BestCampaignMoreView">
-            더보기 <span>+</span>
+    <div className="bg-white rounded-3xl mb-8 shadow-md">
+      <div className="HomeLocalCampaignList">
+        <div className="py-2 px-4 flex justify-between items-center">
+          <span className="text-rem2_5 font-bold">인기 캠페인</span>
+          <a href="/campaign" className="text-rem1_5">
+            더보기 <span className="font-bold text-main_color">+</span>
           </a>
         </div>
-        <ul className="HomeBestList">
-          <li className="BestList1">
-            <a href="/campaign" className="BestListLink">
+        <ul className="py-4 px-2 grid grid-cols-2 auto-rows-my_rows">
+          <li>
+            <a href="/campaign" className="localListLink">
               <img
                 src={localCampaignImg1}
-                className="BestCampaignImg1"
+                className="float-left h-52 w-52 mr-2"
                 alt="캠페인이미지1"
               />
-              <span className="promotion">
-                <span className="recruitType">인스타그램 + 출사단</span>
-                <span className="recruitVisit">방문형</span>
-                <span className="promotionTitle">[부산/광인리] 행복식당</span>
-                <span className="promotionContents">
+              <span className="inline text-rem1_8">
+                <span className="inline-block w-fit text-rem1_3">
+                  인스타그램 + 출사단
+                </span>
+                <span className="inline w-fit text-rem1_3 ml-4">방문형</span>
+                <span className="inline-block w-fit">
+                  [부산/광인리] 행복식당
+                </span>
+                <span className="block h-12 text-border_text_color text-base line-clamp-2">
                   7만원 상당 골라먹자 식사권(회+조개구이+매운탕)
                 </span>
-                <span className="promotionDday">7일 남음</span>
-                <span className="promotionPeriod">
+                <span className="text-main_color inline-block w-fit text-rem1_2">
+                  7일 남음
+                </span>
+                <span className="inline text-base ml-2">
                   리워드 10만원(1팀당 4인 필참입니다)
                 </span>
-                <span className="promotionCount">
-                  <span className="promotionPoint">100,000P</span>
+                <span className="text-border-text-color ml-4 block text-base">
+                  <span className="inline-block w-fit text-rem1_3 font-bold mr-4 text-black">
+                    100,000P
+                  </span>
                   신청 0/3명
                 </span>
               </span>
             </a>
           </li>
-          <li className="BestList2">
-            <a href="/campaign" className="BestListLink">
+          <li>
+            <a href="/campaign" className="localListLink">
               <img
                 src={localCampaignImg2}
-                className="BestCampaignImg1"
+                className="float-left h-52 w-52 mr-2"
                 alt="캠페인이미지2"
               />
-              <span className="promotion">
-                <span className="recruitType">인스타그램 + 출사단</span>
-                <span className="recruitVisit">방문형</span>
-                <span className="promotionTitle">[부산/광인리] 행복식당</span>
-                <span className="promotionContents">
+              <span className="inline text-rem1_8">
+                <span className="inline-block w-fit text-rem1_3">
+                  인스타그램 + 출사단
+                </span>
+                <span className="inline w-fit text-rem1_3 ml-4">방문형</span>
+                <span className="inline-block w-fit">
+                  [부산/광인리] 행복식당
+                </span>
+                <span className="block h-12 text-border_text_color text-base truncate line-clamp-2">
                   7만원 상당 골라먹자 식사권(회+조개구이+매운탕)
                 </span>
-                <span className="promotionDday">7일 남음</span>
-                <span className="promotionPeriod">
+                <span className="text-main_color inline-block w-fit text-rem1_2">
+                  7일 남음
+                </span>
+                <span className="inline text-base ml-2">
                   리워드 10만원(1팀당 4인 필참입니다)
                 </span>
-                <span className="promotionCount">
-                  <span className="promotionPoint">100,000P</span>
+                <span className="text-border-text-color ml-4 block text-base">
+                  <span className="inline-block w-fit text-rem1_3 font-bold mr-4 text-black">
+                    100,000P
+                  </span>
                   신청 0/3명
                 </span>
               </span>
             </a>
           </li>
-          <li className="BestList3">
-            <a href="/campaign" className="BestListLink">
+          <li>
+            <a href="/campaign" className="localListLink">
               <img
                 src={localCampaignImg3}
-                className="BestCampaignImg1"
+                className="float-left h-52 w-52 mr-2"
                 alt="캠페인이미지3"
               />
-              <span className="promotion">
-                <span className="recruitType">인스타그램 + 출사단</span>
-                <span className="recruitVisit">방문형</span>
-                <span className="promotionTitle">[부산/광인리] 행복식당</span>
-                <span className="promotionContents">
+              <span className="inline text-rem1_8">
+                <span className="inline-block w-fit text-rem1_3">
+                  인스타그램 + 출사단
+                </span>
+                <span className="inline w-fit text-rem1_3 ml-4">방문형</span>
+                <span className="inline-block w-fit">
+                  [부산/광인리] 행복식당
+                </span>
+                <span className="block h-12 text-border_text_color text-base truncate line-clamp-2">
                   7만원 상당 골라먹자 식사권(회+조개구이+매운탕)
                 </span>
-                <span className="promotionDday">7일 남음</span>
-                <span className="promotionPeriod">
+                <span className="text-main_color inline-block w-fit text-rem1_2">
+                  7일 남음
+                </span>
+                <span className="inline text-base ml-2">
                   리워드 10만원(1팀당 4인 필참입니다)
                 </span>
-                <span className="promotionCount">
-                  <span className="promotionPoint">100,000P</span>
+                <span className="text-border-text-color ml-4 block text-base">
+                  <span className="inline-block w-fit text-rem1_3 font-bold mr-4 text-black">
+                    100,000P
+                  </span>
                   신청 0/3명
                 </span>
               </span>
             </a>
           </li>
-          <li className="BestList4">
-            <a href="/campaign" className="BestListLink">
+          <li>
+            <a href="/campaign" className="localListLink">
               <img
                 src={localCampaignImg4}
-                className="BestCampaignImg1"
+                className="float-left h-52 w-52 mr-2"
                 alt="캠페인이미지4"
               />
-              <span className="promotion">
-                <span className="recruitType">인스타그램 + 출사단</span>
-                <span className="recruitVisit">방문형</span>
-                <span className="promotionTitle">[부산/광인리] 행복식당</span>
-                <span className="promotionContents">
+              <span className="inline text-rem1_8">
+                <span className="inline-block w-fit text-rem1_3">
+                  인스타그램 + 출사단
+                </span>
+                <span className="inline w-fit text-rem1_3 ml-4">방문형</span>
+                <span className="inline-block w-fit">
+                  [부산/광인리] 행복식당
+                </span>
+                <span className="block h-12 text-border_text_color text-base truncate line-clamp-2">
                   7만원 상당 골라먹자 식사권(회+조개구이+매운탕)
                 </span>
-                <span className="promotionDday">7일 남음</span>
-                <span className="promotionPeriod">
+                <span className="text-main_color inline-block w-fit text-rem1_2">
+                  7일 남음
+                </span>
+                <span className="inline text-base ml-2">
                   리워드 10만원(1팀당 4인 필참입니다)
                 </span>
-                <span className="promotionCount">
-                  <span className="promotionPoint">100,000P</span>
+                <span className="text-border-text-color ml-4 block text-base">
+                  <span className="inline-block w-fit text-rem1_3 font-bold mr-4 text-black">
+                    100,000P
+                  </span>
                   신청 0/3명
                 </span>
               </span>
@@ -122,4 +153,4 @@ function HomeBestCampaign() {
   );
 }
 
-export default HomeBestCampaign;
+export default HomeLocalCampaign;

@@ -6,7 +6,6 @@ import HomeLocalCampaign from "../components/Homeviews/HomeLocalCampaign";
 import HomeBestCampaign from "../components/Homeviews/HomeBestCampaign";
 import HomeAD from "../components/Homeviews/HomeAD";
 import HomeBestPerformer from "../components/Homeviews/HomeBestPerformer";
-import "../assets/css/style.scss";
 
 const HomeView = () => {
   return (

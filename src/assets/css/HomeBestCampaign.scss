@@ -1,97 +1,97 @@
-.HomeBestCampaignBorder {
-  background-color: var(--color-border-content);
-  border-radius: 3%;
-}
+// .HomeBestCampaignBorder {
+//   background-color: var(--color-border-content);
+//   border-radius: 3%;
+// }
 
-.HomeBestCampaignTitle {
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+// .HomeBestCampaignTitle {
+//   padding: 0.5rem;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
 
-.BestCampaignTitle {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
+// .BestCampaignTitle {
+//   font-size: 2.5rem;
+//   font-weight: bold;
+// }
 
-.BestCampaignMoreView {
-  font-size: 1.5rem;
-  span {
-    font-weight: bold;
-    color: var(--color-main);
-  }
-}
+// .BestCampaignMoreView {
+//   font-size: 1.5rem;
+//   span {
+//     font-weight: bold;
+//     color: var(--color-main);
+//   }
+// }
 
-.HomeBestList {
-  padding: 1rem 0.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 15rem auto;
-  img {
-    float: left;
-    height: 13rem;
-    width: 13rem;
-    margin-top: 0.4rem;
-    margin-right: 0.5rem;
-  }
-  .BestList1,
-  .BestList2,
-  .BestList3,
-  .BestList4 {
-    .promotion {
-      display: inline;
-      font-size: 1.8rem;
+// .HomeBestList {
+//   padding: 1rem 0.5rem;
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   grid-auto-rows: 15rem auto;
+//   img {
+//     float: left;
+//     height: 13rem;
+//     width: 13rem;
+//     margin-top: 0.4rem;
+//     margin-right: 0.5rem;
+//   }
+//   .BestList1,
+//   .BestList2,
+//   .BestList3,
+//   .BestList4 {
+//     .promotion {
+//       display: inline;
+//       font-size: 1.8rem;
 
-      .promotionTitle {
-        display: inline-block;
-        width: fit-content;
-        margin: 0.3rem 0;
-      }
+//       .promotionTitle {
+//         display: inline-block;
+//         width: fit-content;
+//         margin: 0.3rem 0;
+//       }
 
-      .recruitType {
-        display: inline-block;
-        width: fit-content;
-        font-size: 1.3rem;
-      }
-      .recruitVisit {
-        display: inline;
-        width: fit-content;
-        font-size: 1.3rem;
-        margin-left: 1rem;
-      }
+//       .recruitType {
+//         display: inline-block;
+//         width: fit-content;
+//         font-size: 1.3rem;
+//       }
+//       .recruitVisit {
+//         display: inline;
+//         width: fit-content;
+//         font-size: 1.3rem;
+//         margin-left: 1rem;
+//       }
 
-      .promotionContents {
-        display: block;
-        color: var(--color-text-content);
-        font-size: 1rem;
-        line-height: 1.5rem;
-      }
-      .promotionDday {
-        color: var(--color-main);
-        display: inline-block;
-        width: fit-content;
-        font-size: 1.2rem;
-      }
-      .promotionPeriod {
-        display: inline;
-        font-size: 1rem;
-        margin-left: 0.5rem;
-      }
-      .promotionPoint {
-        color: var(--color-black);
-        display: inline;
-        width: fit-content;
-        font-size: 1.3rem;
-        font-weight: bold;
-        margin-right: 1rem;
-      }
-      .promotionCount {
-        color: var(--color-text-content);
-        margin-left: 1rem;
-        display: flex;
-        font-size: 1rem;
-      }
-    }
-  }
-}
+//       .promotionContents {
+//         display: block;
+//         color: var(--color-text-content);
+//         font-size: 1rem;
+//         line-height: 1.5rem;
+//       }
+//       .promotionDday {
+//         color: var(--color-main);
+//         display: inline-block;
+//         width: fit-content;
+//         font-size: 1.2rem;
+//       }
+//       .promotionPeriod {
+//         display: inline;
+//         font-size: 1rem;
+//         margin-left: 0.5rem;
+//       }
+//       .promotionPoint {
+//         color: var(--color-black);
+//         display: inline;
+//         width: fit-content;
+//         font-size: 1.3rem;
+//         font-weight: bold;
+//         margin-right: 1rem;
+//       }
+//       .promotionCount {
+//         color: var(--color-text-content);
+//         margin-left: 1rem;
+//         display: flex;
+//         font-size: 1rem;
+//       }
+//     }
+//   }
+// }
