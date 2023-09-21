@@ -1,19 +1,12 @@
-:root {
-  --color-main: #8467fd;
-  --color-black: #000000;
-  --color-back: #ededed;
-  --color-border-content: #ffff;
-  --color-text-content: #8a8a8a;
-}
-
 @import "Header";
 @import "Reset";
 @import "HomeView";
-// @import "HomeLocalCampaign";
 @import "HomeBestCampaign";
 @import "Footer";
 
+* {
+  padding: 0;
+}
 html {
-  font-size: 10px !important;
-  background-color: var(--color-back);
+  font-size: 62.5%;
 }

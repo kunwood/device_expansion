@@ -1,22 +1,48 @@
-import React from "react";
-import ad1 from "../../assets/img/ad1.png";
-import ad2 from "../../assets/img/ad2.png";
-import ad3 from "../../assets/img/ad3.png";
+import React, { useState, useEffect } from "react";
+import ad1 from "../../assets/img/ad1.svg";
+import ad2 from "../../assets/img/ad2.svg";
+import ad3 from "../../assets/img/ad3.svg";
 
-function HomeEventCarousel() {
+const Carousel = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // 이미지와 해당 이미지에 대한 링크 정보를 배열로 정의
+  const imagesWithLinks = [
+    { image: ad1, link: "/" },
+    { image: ad2, link: "/" },
+    { image: ad3, link: "/" },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex + 1) % imagesWithLinks.length
+      );
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="bg-white rounded-3xl shadow-md overflow-hidden">
-      <a href="/event">
-        <img src={ad1} alt="" />
-      </a>
-      <a href="/event">
-        <img src={ad2} alt="" />
-      </a>
-      <a href="/event">
-        <img src={ad3} alt="" />
-      </a>
+    <div className="relative object-cover h-full rounded-3xl overflow-hidden z-0 shadow-md">
+      {imagesWithLinks.map((item, index) => (
+        <a
+          key={index}
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={item.image}
+            alt={`Image ${index + 1}`}
+            className={`absolute top-0 left-0 h-full transition-opacity duration-1000 ${
+              index === currentImageIndex ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        </a>
+      ))}
     </div>
   );
-}
+};
 
-export default HomeEventCarousel;
+export default Carousel;
