@@ -2,15 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div>
-      <div className="footerArea">
-        <h3>Footer</h3>
-        <h3>Footer</h3>
-        <h3>Footer</h3>
-        <h3>Footer</h3>
-        <h3>Footer</h3>
-        <h3>Footer</h3>
-      </div>
+    <div className="customerServiceCenter">
+      <h1 className="text-3xl">포포몬 고객센터</h1>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import Footer from "../components/common/Footer";
 import HomeEventCarousel from "../components/Homeviews/HomeEventCarousel";
 import HomeLocalCampaign from "../components/Homeviews/HomeLocalCampaign";
 import HomeBestCampaign from "../components/Homeviews/HomeBestCampaign";
-import HomeAD from "../components/Homeviews/HomeAD";
+import HomeNewCampaign from "../components/Homeviews/HomeNewCampaign";
 import HomeBestPerformer from "../components/Homeviews/HomeBestPerformer";
 import { ThemeProvider } from "@material-tailwind/react";
 
@@ -27,7 +27,7 @@ const HomeView = () => {
             <HomeBestPerformer />
           </div>
           <div className="item HomeAD">
-            <HomeAD />
+            <HomeNewCampaign />
           </div>
         </div>
         <Footer />

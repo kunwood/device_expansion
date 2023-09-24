@@ -2,147 +2,108 @@ import React from "react";
 import localCampaignImg1 from "../../assets/img/homeLocal/local1.png";
 import localCampaignImg2 from "../../assets/img/homeLocal/local2.png";
 import localCampaignImg3 from "../../assets/img/homeLocal/local3.png";
-import localCampaignImg4 from "../../assets/img/homeLocal/local4.png";
 
-function HomeLocalCampaign() {
+const HomeBestCampaign = () => {
+  const bestCampaign = [
+    {
+      type1: "인스타그램",
+      type2: "출사단",
+      site: "방문형",
+      title: "[부산/광안리]행복식당",
+      contents:
+        "7만원 상당 골라먹자 식사권(회+조개구이+매운탕)  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis id suscipit temporibus explicabo, maxime facilis vel. Nobis voluptate minus quis, veniam adipisci iure tempora, iste praesentium numquam itaque odit dolorum?",
+      dDay: "7",
+      support: "10",
+      limit: "4",
+      image: localCampaignImg1,
+      point: "100,000",
+      apply: "0/3",
+    },
+    {
+      type1: "인스타그램",
+      type2: "출사단",
+      site: "방문형",
+      title: "[부산/광안리]행복식당",
+      contents:
+        "7만원 상당 골라먹자 식사권(회+조개구이+매운탕)  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis id suscipit temporibus explicabo, maxime facilis vel. Nobis voluptate minus quis, veniam adipisci iure tempora, iste praesentium numquam itaque odit dolorum?",
+      dDay: "7",
+      support: "10",
+      limit: "4",
+      image: localCampaignImg2,
+      point: "100,000",
+      apply: "0/3",
+    },
+    {
+      type1: "인스타그램",
+      type2: "출사단",
+      site: "방문형",
+      title: "[부산/광안리]행복식당",
+      contents:
+        "7만원 상당 골라먹자 식사권(회+조개구이+매운탕)  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis id suscipit temporibus explicabo, maxime facilis vel. Nobis voluptate minus quis, veniam adipisci iure tempora, iste praesentium numquam itaque odit dolorum?",
+      dDay: "7",
+      support: "10",
+      limit: "4",
+      image: localCampaignImg3,
+      point: "100,000",
+      apply: "0/3",
+    },
+  ];
+
+  const list = bestCampaign.map((campaign, key) => {
+    return (
+      <li key={key} className="my-3 mx-2">
+        <a href="/campaign" className="localListLink">
+          <img
+            src={campaign.image}
+            alt={`캠페인 이미지 ${campaign + 1}`}
+            className="block w-rem1_8 mr-2"
+          />
+          <div className="w-rem1_8">
+            <span className="inline text-rem1_1">
+              <span>
+                {campaign.type1}+{campaign.type2}
+              </span>
+              <span className="ml-4">{campaign.site}</span>
+              <span className="block text-rem1_8 truncate line-clamp-1">
+                {campaign.title}
+              </span>
+              <span className="block h-12 text-border_text_color text-base line-clamp-2 truncate">
+                {campaign.contents}
+              </span>
+              <span className="text-main_color inline-block w-fit font-bold text-rem1_2">
+                {campaign.dDay}일 남음
+              </span>
+              <span className="inline text-base ml-2">
+                리워드 {campaign.support}만원(1팀당 {campaign.limit}명
+                필참입니다)
+              </span>
+              <span className="text-border-text-color ml-4 block text-base">
+                <span className="inline-block w-fit text-rem1_2 font-bold -ml-4 mr-4 text-black">
+                  {campaign.point}P
+                </span>
+                신청 {campaign.apply} 명
+              </span>
+            </span>
+          </div>
+        </a>
+      </li>
+    );
+  });
+
   return (
-    <div className="bg-white rounded-3xl shadow-md">
+    <div className="bg-white rounded-3xl shadow-md relative">
       <div className="HomeLocalCampaignList">
         <div className="py-2 px-4 flex justify-between items-center">
-          <span className="text-px35 font-bold">인기 캠페인</span>
-          <a href="/campaign" className="text-px20">
-            더보기 <span className="font-bold text-main_color">+</span>
+          <span className="text-rem2_5 font-bold">인기 캠페인</span>
+          <a href="/campaign" className="text-rem1_2">
+            더보기{" "}
+            <span className="font-bold text-main_color text-rem1_5">+</span>
           </a>
         </div>
-        <ul className="py-4 px-2 grid grid-cols-2 auto-rows-my_rows">
-          <li className="my-3">
-            <a href="/campaign" className="localListLink">
-              <img
-                src={localCampaignImg1}
-                className="float-left h-52 w-52 mr-2"
-                alt="캠페인이미지1"
-              />
-              <span className="inline text-px18">
-                <span className="text-px18">인스타그램 + 출사단</span>
-                <span className="text-px18 ml-4">방문형</span>
-                <span className="block text-px30 truncate line-clamp-1">
-                  [부산/광인리] 행복식당
-                </span>
-                <span className="block h-12 text-border_text_color text-base truncate line-clamp-2">
-                  7만원 상당 골라먹자 식사권(회+조개구이+매운탕)
-                </span>
-                <span className="text-main_color inline-block w-fit font-bold text-px13">
-                  7일 남음
-                </span>
-                <span className="inline text-base ml-2">
-                  리워드 10만원(1팀당 4인 필참입니다)
-                </span>
-                <span className="text-border-text-color ml-4 block text-base">
-                  <span className="inline-block w-fit text-px15 font-bold mr-4 text-black">
-                    100,000P
-                  </span>
-                  신청 0/3명
-                </span>
-              </span>
-            </a>
-          </li>
-          <li className="my-3">
-            <a href="/campaign" className="localListLink">
-              <img
-                src={localCampaignImg2}
-                className="float-left h-52 w-52 mr-2"
-                alt="캠페인이미지2"
-              />
-              <span className="inline text-px18">
-                <span className="text-px18">인스타그램 + 출사단</span>
-                <span className="text-px18 ml-4">방문형</span>
-                <span className="block text-px30 truncate line-clamp-1">
-                  [부산/광인리] 행복식당
-                </span>
-                <span className="block h-12 text-border_text_color text-base truncate line-clamp-2">
-                  7만원 상당 골라먹자 식사권(회+조개구이+매운탕)
-                </span>
-                <span className="text-main_color inline-block w-fit font-bold text-px13">
-                  7일 남음
-                </span>
-                <span className="inline text-base ml-2">
-                  리워드 10만원(1팀당 4인 필참입니다)
-                </span>
-                <span className="text-border-text-color ml-4 block text-base">
-                  <span className="inline-block w-fit text-px15 font-bold mr-4 text-black">
-                    100,000P
-                  </span>
-                  신청 0/3명
-                </span>
-              </span>
-            </a>
-          </li>
-          <li className="my-3">
-            <a href="/campaign" className="localListLink">
-              <img
-                src={localCampaignImg3}
-                className="float-left h-52 w-52 mr-2"
-                alt="캠페인이미지3"
-              />
-              <span className="inline text-px18">
-                <span className="text-px18">인스타그램 + 출사단</span>
-                <span className="text-px18 ml-4">방문형</span>
-                <span className="block text-px30 truncate line-clamp-1">
-                  [부산/광인리] 행복식당
-                </span>
-                <span className="block h-12 text-border_text_color text-base truncate line-clamp-2">
-                  7만원 상당 골라먹자 식사권(회+조개구이+매운탕)
-                </span>
-                <span className="text-main_color inline-block w-fit font-bold text-px13">
-                  7일 남음
-                </span>
-                <span className="inline text-base ml-2">
-                  리워드 10만원(1팀당 4인 필참입니다)
-                </span>
-                <span className="text-border-text-color ml-4 block text-base">
-                  <span className="inline-block w-fit text-px15 font-bold mr-4 text-black">
-                    100,000P
-                  </span>
-                  신청 0/3명
-                </span>
-              </span>
-            </a>
-          </li>
-          <li className="my-3">
-            <a href="/campaign" className="localListLink">
-              <img
-                src={localCampaignImg4}
-                className="float-left h-52 w-52 mr-2"
-                alt="캠페인이미지4"
-              />
-              <span className="inline text-px18">
-                <span className="text-px18">인스타그램 + 출사단</span>
-                <span className="text-px18 ml-4">방문형</span>
-                <span className="block text-px30 truncate line-clamp-1">
-                  [부산/광인리] 행복식당
-                </span>
-                <span className="block h-12 text-border_text_color text-base truncate line-clamp-2">
-                  7만원 상당 골라먹자 식사권(회+조개구이+매운탕)
-                </span>
-                <span className="text-main_color inline-block w-fit font-bold text-px13">
-                  7일 남음
-                </span>
-                <span className="inline text-base ml-2">
-                  리워드 10만원(1팀당 4인 필참입니다)
-                </span>
-                <span className="text-border-text-color ml-4 block text-base">
-                  <span className="inline-block w-fit text-px15 font-bold mr-4 text-black">
-                    100,000P
-                  </span>
-                  신청 0/3명
-                </span>
-              </span>
-            </a>
-          </li>
-        </ul>
+        <ul className="px-6 flex flex-wrap justify-between">{list}</ul>
       </div>
     </div>
   );
-}
+};
 
-export default HomeLocalCampaign;
+export default HomeBestCampaign;
