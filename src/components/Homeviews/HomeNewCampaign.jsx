@@ -2,12 +2,12 @@ import React from "react";
 import localCampaignImg1 from "../../assets/img/homeLocal/local1.png";
 import localCampaignImg2 from "../../assets/img/homeLocal/local2.png";
 
-function HomeAD() {
+function HomeNewCampaign() {
   return (
     <div className="bg-white rounded-3xl shadow-md">
       <div className="HomeLocalCampaignList">
         <div className="py-2 px-4 flex justify-between items-center">
-          <span className="text-rem2_5 font-bold">내 지역 캠페인</span>
+          <span className="text-rem2_5 font-bold">새 캠페인</span>
           <a href="/campaign" className="text-rem1_2">
             더보기{" "}
             <span className="font-bold text-main_color text-rem1_5">+</span>
@@ -82,4 +82,4 @@ function HomeAD() {
   );
 }
 
-export default HomeAD;
+export default HomeNewCampaign;

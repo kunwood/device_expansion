@@ -100,7 +100,7 @@ const HomeBestCampaign = () => {
             <span className="font-bold text-main_color text-rem1_5">+</span>
           </a>
         </div>
-        <ul className="px-6 flex flex-wrap justify-between">{list}</ul>
+        <ul className="px-9 flex flex-wrap justify-between">{list}</ul>
       </div>
     </div>
   );

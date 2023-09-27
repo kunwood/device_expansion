@@ -1,30 +1,28 @@
 import React, { useState, useEffect } from "react";
-import ad1 from "../../assets/img/ad1.svg";
-import ad2 from "../../assets/img/ad2.svg";
-import ad3 from "../../assets/img/ad3.svg";
+import event1 from "../../assets/img/event1.svg";
+import event2 from "../../assets/img/event2.svg";
 
-const Carousel = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+const HomeAD = () => {
+  const [eventImageIndex, setEventImageIndex] = useState(0);
 
   // 이미지와 해당 이미지에 대한 링크 정보를 배열로 정의
   const imagesWithLinks = [
-    { image: ad1, link: "/" },
-    { image: ad2, link: "/" },
-    { image: ad3, link: "/" },
+    { image: event1, link: "/" },
+    { image: event2, link: "/" },
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex(
+      setEventImageIndex(
         (prevIndex) => (prevIndex + 1) % imagesWithLinks.length
       );
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative object-cover h-full rounded-3xl overflow-hidden z-0 shadow-md">
+    <div className="relative object-cover h-full z-0 overflow-hidden">
       {imagesWithLinks.map((item, index) => (
         <a
           key={index}
@@ -35,8 +33,8 @@ const Carousel = () => {
           <img
             src={item.image}
             alt={`Image ${index + 1}`}
-            className={`absolute top-0 w-screen transition-opacity duration-1000 ${
-              index === currentImageIndex ? "opacity-100" : "opacity-0"
+            className={`absolute -top-5 w-full transition-opacity duration-1000 ${
+              index === eventImageIndex ? "opacity-100" : "opacity-0"
             }`}
           />
         </a>
@@ -45,4 +43,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default HomeAD;

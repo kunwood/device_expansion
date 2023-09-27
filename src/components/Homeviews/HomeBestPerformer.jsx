@@ -50,9 +50,9 @@ function HomeBestPerformer() {
 
   const sliderSettings = {
     infinite: false,
-    slidesToShow: 4.1, // 보이는 슬라이드 개수
-    slidesToScroll: 1, // 슬라이드 이동 단위
-    arrows: true, // 화살표 표시 여부
+    slidesToShow: 4.1,
+    slidesToScroll: 1,
+    arrows: false,
   };
 
   const list = bestPerformer.map((performer, key) => {
@@ -60,7 +60,7 @@ function HomeBestPerformer() {
       <div key={key} className="px-2">
         <img
           src={performer.image}
-          alt={`퍼포러 이미지 ${performer + 1}`}
+          alt={`퍼포머 이미지 ${performer + 1}`}
           className="w-rem1_8 mb-2 rounded-2xl"
         />
         <span className="text-rem1_8 text-gray-400 flex justify-center mb-3">
@@ -80,10 +80,8 @@ function HomeBestPerformer() {
             <span className="font-bold text-main_color text-rem1_5">+</span>
           </a>
         </div>
-        {/* tabIndex 속성을 추가하여 포커스가 이동하지 않도록 설정 */}
         <Slider {...sliderSettings} className="mx-4 my-3">
           {list.map((item, key) => (
-            // 슬라이더 요소에 tabIndex="-1" 추가
             <div key={key} className="px-2" tabIndex="-1">
               {item}
             </div>
