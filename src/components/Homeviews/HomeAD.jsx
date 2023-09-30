@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import event1 from "../../assets/img/event1.svg";
 import event2 from "../../assets/img/event2.svg";
-
+/* eslint-disable */
 const HomeAD = () => {
   const [eventImageIndex, setEventImageIndex] = useState(0);
 
