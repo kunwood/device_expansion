@@ -1,18 +1,17 @@
 import React from "react";
-import localCampaignImg1 from "../../assets/img/homeLocal/local1.png";
-import localCampaignImg2 from "../../assets/img/homeLocal/local2.png";
-import localCampaignImg3 from "../../assets/img/homeLocal/local3.png";
-import localCampaignImg4 from "../../assets/img/homeLocal/local4.png";
+import localCampaignImg1 from "../../../assets/img/homeLocal/local1.png";
+import localCampaignImg2 from "../../../assets/img/homeLocal/local2.png";
+import localCampaignImg3 from "../../../assets/img/homeLocal/local3.png";
+import localCampaignImg4 from "../../../assets/img/homeLocal/local4.png";
 
-function HomeLocalCampaign() {
+const LocalCampaign = () => {
   const localCampaignList = [
     {
       type1: "인스타그램",
       type2: "출사단",
       site: "방문형",
       title: "[부산/광안리]행복식당",
-      contents:
-        "7만원 상당 골라먹자 식사권(회+조개구이+매운탕)  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis id suscipit temporibus explicabo, maxime facilis vel. Nobis voluptate minus quis, veniam adipisci iure tempora, iste praesentium numquam itaque odit dolorum?",
+      contents: "7만원 상당 골라먹자 식사권(회+조개구이+매운탕)",
       dDay: "7",
       support: "10",
       limit: "4",
@@ -25,8 +24,7 @@ function HomeLocalCampaign() {
       type2: "출사단",
       site: "방문형",
       title: "[부산/광안리]행복식당",
-      contents:
-        "7만원 상당 골라먹자 식사권(회+조개구이+매운탕)  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis id suscipit temporibus explicabo, maxime facilis vel. Nobis voluptate minus quis, veniam adipisci iure tempora, iste praesentium numquam itaque odit dolorum?",
+      contents: "7만원 상당 골라먹자 식사권(회+조개구이+매운탕)",
       dDay: "7",
       support: "10",
       limit: "4",
@@ -39,8 +37,7 @@ function HomeLocalCampaign() {
       type2: "출사단",
       site: "방문형",
       title: "[부산/광안리]행복식당",
-      contents:
-        "7만원 상당 골라먹자 식사권(회+조개구이+매운탕)  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis id suscipit temporibus explicabo, maxime facilis vel. Nobis voluptate minus quis, veniam adipisci iure tempora, iste praesentium numquam itaque odit dolorum?",
+      contents: "7만원 상당 골라먹자 식사권(회+조개구이+매운탕)",
       dDay: "7",
       support: "10",
       limit: "4",
@@ -53,8 +50,7 @@ function HomeLocalCampaign() {
       type2: "출사단",
       site: "방문형",
       title: "[부산/광안리]행복식당",
-      contents:
-        "7만원 상당 골라먹자 식사권(회+조개구이+매운탕)  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis id suscipit temporibus explicabo, maxime facilis vel. Nobis voluptate minus quis, veniam adipisci iure tempora, iste praesentium numquam itaque odit dolorum?",
+      contents: "7만원 상당 골라먹자 식사권(회+조개구이+매운탕)",
       dDay: "7",
       support: "10",
       limit: "4",
@@ -103,19 +99,15 @@ function HomeLocalCampaign() {
   });
 
   return (
-    <div className="bg-white rounded-3xl shadow-md">
+    <div className="bg-white">
       <div className="HomeLocalCampaignList">
         <div className="py-2 px-4 flex justify-between items-center">
           <span className="text-rem2_5 font-bold">내 지역 캠페인</span>
-          <a href="/campaign" className="text-rem1_2">
-            더보기{" "}
-            <span className="font-bold text-main_color text-rem1_5">+</span>
-          </a>
         </div>
         <ul className="px-2 grid grid-cols-2 auto-rows-my_rows mx-2">{list}</ul>
       </div>
     </div>
   );
-}
+};
 
-export default HomeLocalCampaign;
+export default LocalCampaign;

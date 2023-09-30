@@ -57,11 +57,11 @@ function HomeBestPerformer() {
 
   const list = bestPerformer.map((performer, key) => {
     return (
-      <div key={key} className="px-2">
+      <div key={key} className="px-2 inline-block justify-center items-center">
         <img
           src={performer.image}
           alt={`퍼포머 이미지 ${performer + 1}`}
-          className="w-rem1_8 mb-2 rounded-2xl"
+          className="w-rem1_3 mb-2 rounded-2xl"
         />
         <span className="text-rem1_8 text-gray-400 flex justify-center mb-3">
           {performer.name}
@@ -80,7 +80,7 @@ function HomeBestPerformer() {
             <span className="font-bold text-main_color text-rem1_5">+</span>
           </a>
         </div>
-        <Slider {...sliderSettings} className="mx-4 my-3">
+        <Slider {...sliderSettings} className="mx-4 mt-7 mb-3 justify-center">
           {list.map((item, key) => (
             <div key={key} className="px-2" tabIndex="-1">
               {item}

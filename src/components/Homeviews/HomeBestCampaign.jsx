@@ -4,7 +4,7 @@ import localCampaignImg2 from "../../assets/img/homeLocal/local2.png";
 import localCampaignImg3 from "../../assets/img/homeLocal/local3.png";
 
 const HomeBestCampaign = () => {
-  const bestCampaign = [
+  const bestCampaignList = [
     {
       type1: "인스타그램",
       type2: "출사단",
@@ -49,7 +49,7 @@ const HomeBestCampaign = () => {
     },
   ];
 
-  const list = bestCampaign.map((campaign, key) => {
+  const list = bestCampaignList.map((campaign, key) => {
     return (
       <li key={key} className="my-3 mx-2">
         <a href="/campaign" className="localListLink">

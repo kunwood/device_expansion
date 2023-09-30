@@ -8,62 +8,213 @@ import { faBell } from "@fortawesome/free-regular-svg-icons";
 import stay from "../../assets/img/stay.svg";
 import food from "../../assets/img/food.svg";
 import fun from "../../assets/img/fun.svg";
+import point from "../../assets/img/point.svg";
+import beauty from "../../assets/img/beauty.svg";
+import delivery from "../../assets/img/delivery.svg";
+import reporter from "../../assets/img/reporter.svg";
+import center from "../../assets/img/center.svg";
 import stay_h from "../../assets/img/stay_h.svg";
 import food_h from "../../assets/img/food_h.svg";
 import fun_h from "../../assets/img/fun_h.svg";
+import point_h from "../../assets/img/point_h.svg";
+import beauty_h from "../../assets/img/beauty_h.svg";
+import delivery_h from "../../assets/img/delivery_h.svg";
+import reporter_h from "../../assets/img/reporter_h.svg";
+import center_h from "../../assets/img/center_h.svg";
 
 const menuItems = [
   {
     name: "숙소",
+    href: "/campaign",
     image: stay,
     hoverImage: stay_h,
   },
   {
     name: "맛집/카페",
+    href: "/campaign",
     image: food,
     hoverImage: food_h,
   },
   {
     name: "여가",
+    href: "/campaign",
     image: fun,
     hoverImage: fun_h,
   },
   {
     name: "포인트 캠페인",
-    image: food,
-    hoverImage: food_h,
+    href: "/campaign",
+    image: point,
+    hoverImage: point_h,
   },
   {
     name: "뷰티/패션",
-    image: food,
-    hoverImage: food_h,
+    href: "/campaign",
+    image: beauty,
+    hoverImage: beauty_h,
   },
   {
     name: "배송형",
-    image: food,
-    hoverImage: food_h,
+    href: "/campaign",
+    image: delivery,
+    hoverImage: delivery_h,
   },
   {
     name: "기자단",
-    image: food,
-    hoverImage: food_h,
+    href: "/campaign",
+    image: reporter,
+    hoverImage: reporter_h,
   },
   {
     name: "고객센터",
-    image: food,
-    hoverImage: food_h,
+    href: "/campaign",
+    image: center,
+    hoverImage: center_h,
+  },
+];
+
+const hambergerMenuItems = [
+  {
+    name: "국내",
+    classStyle:
+      " w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-1 col-end-2 row-start-1 row-end-2",
+    href: "/campaign",
+  },
+  {
+    name: "해외",
+    classStyle:
+      " w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-1 col-end-2 row-start-2 row-end-3",
+    href: "/campaign",
+  },
+  {
+    name: "방문",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-2 col-end-3 row-start-1 row-end-2",
+    href: "/campaign",
+  },
+  {
+    name: "배달",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-2 col-end-3 row-start-2 row-end-3",
+    href: "/campaign",
+  },
+  {
+    name: "클래스",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-3 col-end-4 row-start-1 row-end-2",
+    href: "/campaign",
+  },
+  {
+    name: "유아동",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-3 col-end-4 row-start-2 row-end-3",
+    href: "/campaign",
+  },
+  {
+    name: "공간대여",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-3 col-end-4 row-start-3 row-end-4",
+    href: "/campaign",
+  },
+  {
+    name: "네일아트",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-5 col-end-6 row-start-1 row-end-2",
+    href: "/campaign",
+  },
+  {
+    name: "헤어/클리닉",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-5 col-end-6 row-start-2 row-end-3",
+    href: "/campaign",
+  },
+  {
+    name: "눈썹/속눈썹",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-5 col-end-6 row-start-3 row-end-4",
+    href: "/campaign",
+  },
+  {
+    name: "피부/왁싱",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-5 col-end-6 row-start-4 row-end-5",
+    href: "/campaign",
+  },
+  {
+    name: "메이크업",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-5 col-end-6 row-start-5 row-end-6",
+    href: "/campaign",
+  },
+  {
+    name: "공지사항",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-8 col-end-9 row-start-1 row-end-2",
+    href: "/campaign",
+  },
+  {
+    name: "이용가이드",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-8 col-end-9 row-start-2 row-end-3",
+    href: "/campaign",
+  },
+  {
+    name: "자주묻는 질문",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-8 col-end-9 row-start-3 row-end-4",
+    href: "/campaign",
+  },
+  {
+    name: "1:1상담",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-8 col-end-9 row-start-4 row-end-5",
+    href: "/campaign",
+  },
+  {
+    name: "광고문의",
+    classStyle:
+      "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
+    gridStyle: "col-start-8 col-end-9 row-start-5 row-end-6",
+    href: "/campaign",
   },
 ];
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   const [hoveredItem, setHoveredItem] = useState(null);
 
   const handleMouseEnter = (index) => {
     setHoveredItem(index);
+    setIsOpen(true);
   };
 
   const handleMouseLeave = () => {
     setHoveredItem(null);
+  };
+
+  const handleCloseMenu = () => {
+    setIsOpen(false);
   };
 
   const [isScrolled, setIsScrolled] = useState(true);
@@ -91,7 +242,10 @@ function Header() {
 
   return (
     <div className="z-5 bg-main_color top-0 h-rem0_7 w-full sticky">
-      <ul className="list-none flex justify-between items-center pt-rem1_5 px-rem1_5">
+      <ul
+        className="list-none flex justify-between items-center pt-rem1_5 px-rem1_5"
+        onMouseEnter={handleCloseMenu}
+      >
         <li>
           <a
             href="/"
@@ -138,17 +292,46 @@ function Header() {
         </li>
       </ul>
       <div
-        className={`bg-main_color mt-rem1_5 w-full h-rem6_0 flex justify-evenly items-center sticky ${
-          isScrolled
-            ? "translate-y-0 opacity-100 "
-            : "-translate-y-full opacity-0"
-        }`}
+        className={`
+bg-main_color mt-rem1_5 w-full h-rem6_0 flex justify-evenly items-center sticky duration-100
+${isScrolled ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"}
+`}
       >
         <ul className="flex justify-around w-full mx-rem0_2">
+          <li>
+            <div>
+              <button
+                onClick={toggleMenu}
+                className="text-rem3_0 text-white focus:outline-none w-rem0_7"
+              >
+                ☰
+              </button>
+
+              {isOpen && (
+                <div className="absolute flex mt-4 -ml-12 w-full h-rem30_0 shadow-lg bg-white pl-rem8_0 bg-opacity-90">
+                  <ul
+                    className="h-rem30_0 grid grid-cols-7 auto-cols-my_col grid-rows-6 gap-x-7"
+                    onMouseLeave={handleCloseMenu}
+                  >
+                    {hambergerMenuItems.map((hembergerMenuItem, index) => (
+                      <li
+                        key={index}
+                        className={`${hembergerMenuItem.classStyle} ${hembergerMenuItem.gridStyle}`}
+                      >
+                        <a href={hembergerMenuItem.href}>
+                          {hembergerMenuItem.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </li>
           {menuItems.map((menuItem, index) => (
             <li key={index}>
               <a
-                href="/"
+                href={menuItem.href}
                 className={`rounded-2xl bg-transparent w-rem1_5 py-2 text-rem1_7 text-white flex items-center justify-center hover:bg-white transition-colors duration-300 ${
                   hoveredItem === index ? "hover:text-main_color" : ""
                 }`}

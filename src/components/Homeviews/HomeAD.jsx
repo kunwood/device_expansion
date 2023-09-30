@@ -33,9 +33,15 @@ const HomeAD = () => {
           <img
             src={item.image}
             alt={`Image ${index + 1}`}
-            className={`absolute -top-5 w-full transition-opacity duration-1000 ${
+            className={`h-full transition-opacity duration-1000 ${
               index === eventImageIndex ? "opacity-100" : "opacity-0"
             }`}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+            }}
           />
         </a>
       ))}

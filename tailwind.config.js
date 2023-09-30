@@ -34,17 +34,21 @@ module.exports = {
         rem0_3: "3rem",
         rem0_2: "2rem",
         rem1_5: "1.5rem",
+        rem1_0: "10rem",
+        rem15_0: "15rem",
+        rem0_7: "7rem",
         p4: "4%",
         p1: "1%",
       },
       padding: {
         rem1_5: "1.5rem",
+        rem8_0: "8rem",
       },
       flex: {
         my_flex: "1 0 100%",
       },
       gridAutoColumns: {
-        my_col: "minmax(0, 3fr",
+        my_col: "minmax(15rem, auto)",
       },
       gridAutoRows: {
         my_rows: "minmax(15rem, auto)",
@@ -57,6 +61,7 @@ module.exports = {
       fontSize: {
         rem2_5: ["2.5rem"],
         rem2_0: ["2rem"],
+        rem5_0: ["5rem"],
         rem3_0: ["3rem"],
         rem1_8: ["1.8rem"],
         rem1_2: ["1.2rem"],
@@ -67,9 +72,11 @@ module.exports = {
       },
       height: {
         calc: "calc(100vh - 2rem);",
+        rem30_0: "30rem",
         rem25_4: "25.4rem",
         rem1_7: "17rem",
         rem1_6: "16rem",
+        rem2_0: "20rem",
         rem0_7: "7rem",
         rem4_0: "4rem",
         rem6_0: "6rem",
@@ -84,6 +91,8 @@ module.exports = {
         rem1_8: "18rem",
         rem1_2: "12rem",
         rem1_5: "15rem",
+        rem1_4: "14rem",
+        rem1_3: "13rem",
         rem0_4: "4rem",
         p40: "40%",
         p30: "30%",
