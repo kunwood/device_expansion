@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-bbf6b332-0232-4091-b279-0b592ad24f01" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.02 30.02">
+  <defs>
+    <style>
+      .uuid-4e5babb5-1fb5-43a5-a984-e5b02ff61667 {
+        fill: none;
+        stroke: #8467fd;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <path class="uuid-4e5babb5-1fb5-43a5-a984-e5b02ff61667" d="M19.2,4.82H4.69c-1.18,0-2.14,.96-2.14,2.14V24.85c0,1.18,.96,2.14,2.14,2.14H22.64c1.18,0,2.14-.96,2.14-2.14V12.61"/>
+  <line class="uuid-4e5babb5-1fb5-43a5-a984-e5b02ff61667" x1="21.25" y1="19.44" x2="18.07" y2="19.44"/>
+  <line class="uuid-4e5babb5-1fb5-43a5-a984-e5b02ff61667" x1="21.25" y1="22.47" x2="6" y2="22.47"/>
+  <path class="uuid-4e5babb5-1fb5-43a5-a984-e5b02ff61667" d="M11.94,15.48l-.51,2.15c-.16,.7,.43,1.34,1.13,1.23l2.01-.3c.21-.03,.4-.13,.56-.28L27.08,6.66c.52-.5,.52-1.34,.01-1.85l-1.4-1.4c-.51-.51-1.33-.51-1.83,0L12.21,15c-.13,.13-.23,.3-.27,.48Z"/>
+  <line class="uuid-4e5babb5-1fb5-43a5-a984-e5b02ff61667" x1="22.9" y1="4.36" x2="26.08" y2="7.64"/>
+</svg>
