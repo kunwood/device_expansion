@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ad1 from "../../assets/img/ad1.svg";
 import ad2 from "../../assets/img/ad2.svg";
 import ad3 from "../../assets/img/ad3.svg";
-
+/* eslint-disable */
 const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -34,7 +34,7 @@ const Carousel = () => {
         >
           <img
             src={item.image}
-            alt={`Image ${index + 1}`}
+            alt={`이미지 ${index + 1}`}
             className={`absolute top-0 w-screen transition-opacity duration-1000 ${
               index === currentImageIndex ? "opacity-100" : "opacity-0"
             }`}

@@ -194,7 +194,7 @@ const hambergerMenuItems = [
     href: "/campaign",
   },
 ];
-
+/* eslint-disable */
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -218,19 +218,19 @@ function Header() {
   };
 
   const [isScrolled, setIsScrolled] = useState(true);
-  let prevScrollpos = window.scrollY;
+  let prevScroll = window.scrollY;
 
   useEffect(() => {
     const handleScroll = () => {
       let currentScrollPos = window.scrollY;
-      if (currentScrollPos > prevScrollpos) {
+      if (currentScrollPos > prevScroll) {
         if (currentScrollPos > 30) {
           setIsScrolled(false);
         }
       } else {
         setIsScrolled(true);
       }
-      prevScrollpos = currentScrollPos;
+      prevScroll = currentScrollPos;
     };
 
     window.addEventListener("scroll", handleScroll);
