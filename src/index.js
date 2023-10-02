@@ -3,8 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import "./assets/css/style.scss";
-
-// import "tailwindcss/tailwind.css";
+import "tailwindcss/tailwind.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

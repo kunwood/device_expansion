@@ -8,7 +8,7 @@ function HomeNewCampaign() {
       <div className="HomeLocalCampaignList">
         <div className="py-2 px-4 flex justify-between items-center">
           <span className="text-rem2_5 font-bold">새 캠페인</span>
-          <a href="/campaign" className="text-rem1_2">
+          <a href="/badgate" className="text-rem1_2">
             더보기{" "}
             <span className="font-bold text-main_color text-rem1_5">+</span>
           </a>

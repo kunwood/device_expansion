@@ -4,6 +4,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      lineHeight: {
+        rem1_9: "1.9rem",
+        rem0_1: "1rem",
+      },
       borderRadius: {
         none: "0",
         sm: "0.125rem",
@@ -29,6 +33,7 @@ module.exports = {
       },
       margin: {
         rem5_0: "5rem",
+        rem5_5: "5.5rem",
         rem0_3: "3rem",
         rem0_2: "2rem",
         rem1_5: "1.5rem",
@@ -41,6 +46,7 @@ module.exports = {
       padding: {
         rem1_5: "1.5rem",
         rem8_0: "8rem",
+        rem11_0: "10rem",
       },
       flex: {
         my_flex: "1 0 100%",
@@ -67,17 +73,24 @@ module.exports = {
         rem1_3: ["1.3rem"],
         rem1_5: ["1.5rem"],
         rem1_7: ["1.7rem"],
+        rem1_6: ["1.6rem"],
       },
       height: {
         calc: "calc(100vh - 2rem);",
         rem30_0: "30rem",
+        rem26_0: "26rem",
+        rem24_0: "24rem",
         rem25_4: "25.4rem",
+        rem2_0: "20rem",
+        rem1_8: "18rem",
         rem1_7: "17rem",
         rem1_6: "16rem",
-        rem2_0: "20rem",
+        rem1_3: "13rem",
+        rem1_0: "10rem",
+        rem0_8: "8rem",
         rem0_7: "7rem",
-        rem4_0: "4rem",
         rem6_0: "6rem",
+        rem4_0: "4rem",
         left: "68.8rem",
         right: "24.1rem",
         profile: "3.35rem",
@@ -86,6 +99,8 @@ module.exports = {
         rem71_0: "71rem",
         rem34_0: "340rem",
         rem2_0: "20rem",
+        rem40_0: "40rem",
+        rem30_0: "30rem",
         rem1_8: "18rem",
         rem1_2: "12rem",
         rem1_5: "15rem",
@@ -106,5 +121,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

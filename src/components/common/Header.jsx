@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/img/logo.svg";
+import logo_txt from "../../assets/img/logo_txt.svg";
 import profileImg from "../../assets/img/profileImg.png";
 import "../../assets/css/style.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,49 +26,49 @@ import center_h from "../../assets/img/center_h.svg";
 const menuItems = [
   {
     name: "숙소",
-    href: "/campaign",
+    href: "/badgate",
     image: stay,
     hoverImage: stay_h,
   },
   {
     name: "맛집/카페",
-    href: "/campaign",
+    href: "/badgate",
     image: food,
     hoverImage: food_h,
   },
   {
     name: "여가",
-    href: "/campaign",
+    href: "/badgate",
     image: fun,
     hoverImage: fun_h,
   },
   {
     name: "포인트 캠페인",
-    href: "/campaign",
+    href: "/badgate",
     image: point,
     hoverImage: point_h,
   },
   {
     name: "뷰티/패션",
-    href: "/campaign",
+    href: "/badgate",
     image: beauty,
     hoverImage: beauty_h,
   },
   {
     name: "배송형",
-    href: "/campaign",
+    href: "/badgate",
     image: delivery,
     hoverImage: delivery_h,
   },
   {
     name: "기자단",
-    href: "/campaign",
+    href: "/badgate",
     image: reporter,
     hoverImage: reporter_h,
   },
   {
     name: "고객센터",
-    href: "/campaign",
+    href: "/badgate",
     image: center,
     hoverImage: center_h,
   },
@@ -79,121 +80,122 @@ const hambergerMenuItems = [
     classStyle:
       " w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-1 col-end-2 row-start-1 row-end-2",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "해외",
     classStyle:
       " w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-1 col-end-2 row-start-2 row-end-3",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "방문",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-2 col-end-3 row-start-1 row-end-2",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "배달",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-2 col-end-3 row-start-2 row-end-3",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "클래스",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-3 col-end-4 row-start-1 row-end-2",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "유아동",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-3 col-end-4 row-start-2 row-end-3",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "공간대여",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-3 col-end-4 row-start-3 row-end-4",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "네일아트",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-5 col-end-6 row-start-1 row-end-2",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "헤어/클리닉",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-5 col-end-6 row-start-2 row-end-3",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "눈썹/속눈썹",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-5 col-end-6 row-start-3 row-end-4",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "피부/왁싱",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-5 col-end-6 row-start-4 row-end-5",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "메이크업",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-5 col-end-6 row-start-5 row-end-6",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "공지사항",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-8 col-end-9 row-start-1 row-end-2",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "이용가이드",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-8 col-end-9 row-start-2 row-end-3",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "자주묻는 질문",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-8 col-end-9 row-start-3 row-end-4",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "1:1상담",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-8 col-end-9 row-start-4 row-end-5",
-    href: "/campaign",
+    href: "/badgate",
   },
   {
     name: "광고문의",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-8 col-end-9 row-start-5 row-end-6",
-    href: "/campaign",
+    href: "/badgate",
   },
 ];
+
 /* eslint-disable */
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -251,7 +253,7 @@ function Header() {
             href="/"
             className="bg-transparent flex mx-p4 w-rem2_0 overflow-hidden"
           >
-            <img src={logo} className="w-full h-full" alt="logo" />
+            <img src={logo_txt} className="w-full h-full" alt="logo" />
           </a>
         </li>
         <li className="h-rem4_0 w-p40 max-w-full bg-transparent mx-p1 flex">
@@ -297,37 +299,28 @@ bg-main_color mt-rem1_5 w-full h-rem6_0 flex justify-evenly items-center sticky 
 ${isScrolled ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"}
 `}
       >
-        <ul className="flex justify-around w-full mx-rem0_2">
-          <li>
-            <div>
-              <button
-                onClick={toggleMenu}
-                className="text-rem3_0 text-white focus:outline-none w-rem0_7"
-              >
-                ☰
-              </button>
-
-              {isOpen && (
-                <div className="absolute flex mt-4 -ml-12 w-full h-rem30_0 shadow-lg bg-white pl-rem8_0 bg-opacity-90">
-                  <ul
-                    className="h-rem30_0 grid grid-cols-7 auto-cols-my_col grid-rows-6 gap-x-7"
-                    onMouseLeave={handleCloseMenu}
-                  >
-                    {hambergerMenuItems.map((hembergerMenuItem, index) => (
-                      <li
-                        key={index}
-                        className={`${hembergerMenuItem.classStyle} ${hembergerMenuItem.gridStyle}`}
-                      >
-                        <a href={hembergerMenuItem.href}>
-                          {hembergerMenuItem.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          </li>
+        <ul className="flex justify-between w-full -ml-10">
+          <div>
+            {isOpen && (
+              <div className="absolute mt-rem5_5 ml-5 w-full h-rem30_0 shadow-lg bg-white bg-opacity-90">
+                <ul
+                  className="h-rem30_0 grid grid-cols-7 auto-cols-fr grid-rows-6 justify-center -mr-5 ml-2"
+                  onMouseLeave={handleCloseMenu}
+                >
+                  {hambergerMenuItems.map((hembergerMenuItem, index) => (
+                    <li
+                      key={index}
+                      className={`w-full py-2 text-rem1_7 text-black flex items-center justify-center ${hembergerMenuItem.gridStyle}`}
+                    >
+                      <a href={hembergerMenuItem.href}>
+                        {hembergerMenuItem.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
           {menuItems.map((menuItem, index) => (
             <li key={index}>
               <a
@@ -343,7 +336,7 @@ ${isScrolled ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"}
                     hoveredItem === index ? menuItem.hoverImage : menuItem.image
                   }
                   alt=""
-                  className="w-[4rem] mr-2"
+                  className="w-rem0_4 mr-2"
                 />
                 {menuItem.name}
               </a>
