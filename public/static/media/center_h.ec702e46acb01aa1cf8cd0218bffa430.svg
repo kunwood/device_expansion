@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-45b9c4fd-935f-4191-8aff-744a363dfea0" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.02 30.02">
+  <defs>
+    <style>
+      .uuid-0db64f1f-6060-450b-a4b8-9facbdb274f6, .uuid-17bc88fc-5c99-4049-9c29-9d9c6051decc {
+        fill: none;
+        stroke: #8467fd;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .uuid-17bc88fc-5c99-4049-9c29-9d9c6051decc {
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <path class="uuid-0db64f1f-6060-450b-a4b8-9facbdb274f6" d="M27.18,27.43c-.63-3.83-3.95-6.75-7.96-6.75h-7.8c-4.01,0-7.33,2.92-7.96,6.75"/>
+  <circle class="uuid-0db64f1f-6060-450b-a4b8-9facbdb274f6" cx="15.3" cy="12.12" r="5.82"/>
+  <ellipse class="uuid-0db64f1f-6060-450b-a4b8-9facbdb274f6" cx="22.01" cy="12.12" rx=".42" ry="2.89"/>
+  <ellipse class="uuid-0db64f1f-6060-450b-a4b8-9facbdb274f6" cx="8.42" cy="12.12" rx=".42" ry="2.89"/>
+  <path class="uuid-0db64f1f-6060-450b-a4b8-9facbdb274f6" d="M22.16,9.83c-.88-3.11-3.47-5.12-6.86-5.12s-6.09,2.4-6.88,5.63"/>
+  <path class="uuid-17bc88fc-5c99-4049-9c29-9d9c6051decc" d="M8.42,15.17s.82,2.87,4.12,3.85"/>
+  <circle class="uuid-17bc88fc-5c99-4049-9c29-9d9c6051decc" cx="12.54" cy="19.03" r=".46"/>
+</svg>

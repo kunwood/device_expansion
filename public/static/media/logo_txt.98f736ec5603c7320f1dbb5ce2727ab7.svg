@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-44b0f4d2-ed0f-4a8d-bc47-af732b8ee76e" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 2.18">
+  <defs>
+    <style>
+      .uuid-16c2c79b-52e1-4e74-a10d-e94c19e39f97 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .25px;
+      }
+    </style>
+  </defs>
+  <polyline class="uuid-16c2c79b-52e1-4e74-a10d-e94c19e39f97" points="4.39 .54 4.39 1.48 4.9 1.48"/>
+  <ellipse class="uuid-16c2c79b-52e1-4e74-a10d-e94c19e39f97" cx="5.6" cy="1" rx=".31" ry=".49"/>
+  <ellipse class="uuid-16c2c79b-52e1-4e74-a10d-e94c19e39f97" cx="7.6" cy="1" rx=".31" ry=".49"/>
+  <path class="uuid-16c2c79b-52e1-4e74-a10d-e94c19e39f97" d="M6.7,1h.21c0,.27-.14,.49-.31,.49s-.31-.22-.31-.49,.14-.49,.31-.49c.09,0,.16,.05,.22,.14"/>
+</svg>

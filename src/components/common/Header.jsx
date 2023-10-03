@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/img/logo.svg";
+// import logo from "../../assets/img/logo.svg";
 import logo_txt from "../../assets/img/logo_txt.svg";
-import profileImg from "../../assets/img/profileImg.png";
+// import profileImg from "../../assets/img/profileImg.png";
 import "../../assets/css/style.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { faBell } from "@fortawesome/free-regular-svg-icons";
+// import { faBell } from "@fortawesome/free-regular-svg-icons";
 import stay from "../../assets/img/stay.svg";
 import food from "../../assets/img/food.svg";
 import fun from "../../assets/img/fun.svg";
@@ -26,49 +26,49 @@ import center_h from "../../assets/img/center_h.svg";
 const menuItems = [
   {
     name: "숙소",
-    href: "/badgate",
+    href: "/campaign",
     image: stay,
     hoverImage: stay_h,
   },
   {
     name: "맛집/카페",
-    href: "/badgate",
+    href: "/campaign",
     image: food,
     hoverImage: food_h,
   },
   {
     name: "여가",
-    href: "/badgate",
+    href: "/campaign",
     image: fun,
     hoverImage: fun_h,
   },
   {
     name: "포인트 캠페인",
-    href: "/badgate",
+    href: "/campaign",
     image: point,
     hoverImage: point_h,
   },
   {
     name: "뷰티/패션",
-    href: "/badgate",
+    href: "/campaign",
     image: beauty,
     hoverImage: beauty_h,
   },
   {
     name: "배송형",
-    href: "/badgate",
+    href: "/campaign",
     image: delivery,
     hoverImage: delivery_h,
   },
   {
     name: "기자단",
-    href: "/badgate",
+    href: "/campaign",
     image: reporter,
     hoverImage: reporter_h,
   },
   {
     name: "고객센터",
-    href: "/badgate",
+    href: "/campaign",
     image: center,
     hoverImage: center_h,
   },
@@ -80,119 +80,119 @@ const hambergerMenuItems = [
     classStyle:
       " w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-1 col-end-2 row-start-1 row-end-2",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "해외",
     classStyle:
       " w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-1 col-end-2 row-start-2 row-end-3",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "방문",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-2 col-end-3 row-start-1 row-end-2",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "배달",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-2 col-end-3 row-start-2 row-end-3",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "클래스",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-3 col-end-4 row-start-1 row-end-2",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "유아동",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-3 col-end-4 row-start-2 row-end-3",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "공간대여",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-3 col-end-4 row-start-3 row-end-4",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "네일아트",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-5 col-end-6 row-start-1 row-end-2",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "헤어/클리닉",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-5 col-end-6 row-start-2 row-end-3",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "눈썹/속눈썹",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-5 col-end-6 row-start-3 row-end-4",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "피부/왁싱",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-5 col-end-6 row-start-4 row-end-5",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "메이크업",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-5 col-end-6 row-start-5 row-end-6",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "공지사항",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-8 col-end-9 row-start-1 row-end-2",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "이용가이드",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-8 col-end-9 row-start-2 row-end-3",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "자주묻는 질문",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-8 col-end-9 row-start-3 row-end-4",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "1:1상담",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-8 col-end-9 row-start-4 row-end-5",
-    href: "/badgate",
+    href: "/campaign",
   },
   {
     name: "광고문의",
     classStyle:
       "w-rem1_5 py-2 text-rem1_7 text-black flex items-center justify-center",
     gridStyle: "col-start-8 col-end-9 row-start-5 row-end-6",
-    href: "/badgate",
+    href: "/campaign",
   },
 ];
 
@@ -270,7 +270,7 @@ function Header() {
             <FontAwesomeIcon icon={faMagnifyingGlass} size="2xl" />
           </button>
         </li>
-        <li className="min-w-fit justify-between flex w-p8 bg-transparent items-center">
+        {/* <li className="min-w-fit justify-between flex w-p8 bg-transparent items-center">
           <button
             href=""
             aria-label="alarm"
@@ -290,6 +290,23 @@ function Header() {
                 className="rounded-p50 h-profile w-profile"
               />
             </span>
+          </button>
+        </li> */}
+        <li className="min-w-fit justify-between flex w-p8 bg-transparent items-center">
+          <button
+            href=""
+            aria-label="alarm"
+            className="min-w-fit mr-rem0_2 w-p30 h-full bg-transparent outline-0 border-0 text-white text-rem1_5"
+          >
+            회원가입
+          </button>
+          <span className="mr-8 text-rem1_5 text-white font-bold">|</span>
+          <button
+            href="/"
+            aria-label="profile"
+            className="min-w-fit mr-rem0_2 w-p30 h-full bg-transparent outline-0 border-0 text-white text-rem1_5"
+          >
+            로그인
           </button>
         </li>
       </ul>

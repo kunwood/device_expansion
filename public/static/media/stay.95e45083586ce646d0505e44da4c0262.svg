@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-1a3cbde7-fe45-4b98-a204-95764b91ff29" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.02 30.02">
+  <defs>
+    <style>
+      .uuid-59c8a8be-2270-4651-b28f-23c2563cc09b {
+        fill: #fff;
+      }
+
+      .uuid-f0e5ef3e-3721-4047-bb62-3328596aae6f {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <path class="uuid-f0e5ef3e-3721-4047-bb62-3328596aae6f" d="M20.09,2.22H10.83C6.18,2.22,2.4,5.99,2.4,10.65V27.44H20.09V2.22Z"/>
+  <path class="uuid-f0e5ef3e-3721-4047-bb62-3328596aae6f" d="M27.81,16.81h-3.9c-1.96,0-3.56,1.59-3.56,3.56v7.08h7.46v-10.64Z"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="13.91" y="5.09" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="16.11" y="5.09" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="13.91" y="7.44" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="16.11" y="7.44" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="13.91" y="9.78" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="16.11" y="9.78" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="13.91" y="12.13" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="16.11" y="12.13" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="13.91" y="14.48" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="16.11" y="14.48" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="13.91" y="16.82" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="16.11" y="16.82" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="13.91" y="19.17" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="16.11" y="19.17" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="13.91" y="21.52" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="16.11" y="21.52" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="22.21" y="20.05" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="24.41" y="20.05" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="22.21" y="22.4" width="1.09" height="1.09"/>
+  <rect class="uuid-59c8a8be-2270-4651-b28f-23c2563cc09b" x="24.41" y="22.4" width="1.09" height="1.09"/>
+</svg>

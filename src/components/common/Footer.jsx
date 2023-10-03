@@ -28,7 +28,7 @@ function Footer() {
         <div className="w-9/10 m-9 inline-block justify-center items-center text-xl break-words">
           <span>(주)LOGOCOMPANY</span>
           <p>
-            사업자 정보 대표자: 하인덕 사업자등록번호: 123-45-567899
+            사업자 정보 대표자: 김건우 사업자등록번호: 123-45-567899
             통신판매업신고번호: 2023-부산-0000 주소: 부산광역시 수영구 연수로
             1234, 고객센터:051-123-4567 제휴문의: gwkim9205@naver.com Copyright
             © 2023 LOGOCAMPANY. All rights reserved. 이용약관 | 개인정보
