@@ -74,7 +74,7 @@ const menuItems = [
   },
 ];
 
-const hambergerMenuItems = [
+const toggleMenuItems = [
   {
     name: "국내",
     classStyle:
@@ -200,10 +200,6 @@ const hambergerMenuItems = [
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   const [hoveredItem, setHoveredItem] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -270,28 +266,6 @@ function Header() {
             <FontAwesomeIcon icon={faMagnifyingGlass} size="2xl" />
           </button>
         </li>
-        {/* <li className="min-w-fit justify-between flex w-p8 bg-transparent items-center">
-          <button
-            href=""
-            aria-label="alarm"
-            className="min-w-fit mr-rem0_2 w-p30 h-full bg-transparent outline-0 border-0 text-white"
-          >
-            <FontAwesomeIcon icon={faBell} size="2x" />
-          </button>
-          <button
-            href="/"
-            aria-label="profile"
-            className="min-w-fit mr-rem0_2 w-p30 h-full bg-transparent outline-0 border-0"
-          >
-            <span className="m-rem4_0">
-              <img
-                src={profileImg}
-                alt=""
-                className="rounded-p50 h-profile w-profile"
-              />
-            </span>
-          </button>
-        </li> */}
         <li className="min-w-fit justify-between flex w-p8 bg-transparent items-center">
           <button
             href=""
@@ -324,14 +298,12 @@ ${isScrolled ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"}
                   className="h-rem30_0 grid grid-cols-7 auto-cols-fr grid-rows-6 justify-center -mr-5 ml-2"
                   onMouseLeave={handleCloseMenu}
                 >
-                  {hambergerMenuItems.map((hembergerMenuItem, index) => (
+                  {toggleMenuItems.map((toggleMenuItem, index) => (
                     <li
                       key={index}
-                      className={`w-full py-2 text-rem1_7 text-black flex items-center justify-center ${hembergerMenuItem.gridStyle}`}
+                      className={`w-full py-2 text-rem1_7 text-black flex items-center justify-center ${toggleMenuItem.gridStyle}`}
                     >
-                      <a href={hembergerMenuItem.href}>
-                        {hembergerMenuItem.name}
-                      </a>
+                      <a href={toggleMenuItem.href}>{toggleMenuItem.name}</a>
                     </li>
                   ))}
                 </ul>

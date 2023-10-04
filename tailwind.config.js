@@ -53,6 +53,7 @@ module.exports = {
       },
       gridAutoColumns: {
         my_col: "minmax(15rem, auto)",
+        signIn_col: "minmax(5rem, auto)",
       },
       gridAutoRows: {
         my_rows: "minmax(15rem, auto)",
