@@ -22,7 +22,7 @@ const HomeAD = () => {
   }, []);
 
   return (
-    <div className="relative object-cover h-full z-0 overflow-hidden">
+    <div className="relative object-cover h-full overflow-hidden">
       {imagesWithLinks.map((item, index) => (
         <a
           key={index}

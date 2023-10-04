@@ -74,7 +74,7 @@ function HomeBestPerformer() {
     <div className="bg-white rounded-3xl shadow-md">
       <div className="HomeLocalCampaignList">
         <div className="py-2 px-4 flex justify-between items-center">
-          <span className="text-rem2_5 font-bold">이달의 베스트 퍼포머</span>
+          <span className="text-rem2_5 font-bold">이달의 베스트 블로거</span>
           <a href="/badgate" className="text-rem1_2">
             더보기{" "}
             <span className="font-bold text-main_color text-rem1_5">+</span>
