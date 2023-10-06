@@ -15,21 +15,21 @@ const SignHeader = () => {
             </a>
           </li>
           <li className="min-w-fit justify-between flex w-p8 bg-transparent items-center">
-            <button
-              href=""
+            <a
+              href="/signup"
               aria-label="alarm"
               className="min-w-fit mr-rem0_2 w-p30 h-full bg-transparent outline-0 border-0 text-white text-rem1_5"
             >
               회원가입
-            </button>
+            </a>
             <span className="mr-8 text-rem1_5 text-white font-bold">|</span>
-            <button
+            <a
               href="/"
               aria-label="profile"
               className="min-w-fit mr-rem0_2 w-p30 h-full bg-transparent outline-0 border-0 text-white text-rem1_5"
             >
               로그인
-            </button>
+            </a>
           </li>
         </ul>
       </div>
