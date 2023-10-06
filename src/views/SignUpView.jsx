@@ -1,7 +1,7 @@
 import React from "react";
 import SignHeader from "../components/SignInUp/SignHeader";
 import { ThemeProvider } from "@material-tailwind/react";
-import SignIn from "../components/SignInUp/SignIn";
+import SignUp from "../components/SignInUp/SignUp";
 import Footer from "../components/common/Footer";
 
 const LoginView = () => {
@@ -9,7 +9,7 @@ const LoginView = () => {
     <div>
       <ThemeProvider>
         <SignHeader />
-        <SignIn />
+        <SignUp />
         <Footer />
       </ThemeProvider>
     </div>
